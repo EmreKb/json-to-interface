@@ -1,0 +1,30 @@
+:host {
+  display: flex;
+  flex-direction: row;
+  background-color: var(--navbar-color);
+}
+
+.navbar {
+  padding: 0.4rem;
+  &-logo {
+    &-up-box {
+        width: 100%;
+        height: 1rem;
+        background-color: var(--text-color);
+        border-radius: 20rem 20rem 0 0;
+    }
+
+    span {
+      font-size: 32px;
+      font-weight: 500;
+      padding: 1rem;
+    }
+
+    &-dn-box {
+        width: 100%;
+        height: 1rem;
+        background-color: var(--text-color);
+        border-radius: 0 0 20rem 20rem;
+    }
+  }
+}
