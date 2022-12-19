@@ -6,9 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { NavbarComponent } from './components/navbar/navbar.component';
+import { ContentComponent } from './components/content/content.component';
 
 @NgModule({
-  declarations: [AppComponent, NavbarComponent],
+  declarations: [AppComponent, NavbarComponent, ContentComponent],
   imports: [BrowserModule, AppRoutingModule, BrowserAnimationsModule, FontAwesomeModule],
   providers: [],
   bootstrap: [AppComponent],
