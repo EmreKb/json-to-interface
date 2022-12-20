@@ -3,6 +3,7 @@
   flex-direction: column;
   align-items: center;
   margin: 1rem;
+  margin-bottom: 2rem;
   height: 60rem;
   gap: 1rem;
 }
@@ -19,17 +20,26 @@
   }
 }
 
+.mb {
+  margin-bottom: 1rem;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
 textarea {
   width: 50%;
   height: 50%;
   outline: 0;
   font-size: 18px;
-  padding: 0.4rem;
+  margin: 1rem;
   border-radius: 0.5rem;
   box-shadow: 0 1px 2px;
 }
 
-.convert {
+.btn {
   background-color: var(--navbar-color);
   outline: 0;
   padding: 0.4rem 1rem;
@@ -39,6 +49,13 @@ textarea {
 
   &:active {
     box-shadow: 0 1px 2px;
+  }
+}
+
+.result {
+  .copy {
+    position: relative;
+    right: 0;
   }
 }
 

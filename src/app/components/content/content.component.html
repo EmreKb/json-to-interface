@@ -3,8 +3,13 @@
   <a href="https://www.typescriptlang.org/" target="_blank">typescript</a>
   interface!
 </div>
-<textarea name="text" id="text"></textarea>
-<button class="convert">Convert</button>
+<textarea name="text" id="text" #textarea></textarea>
+<span class="error" [hidden]="!onError">JSON girdiğinize emin olun!</span>
+<button class="btn" (click)="convert()">Convert</button>
 <a href="https://github.com/EmreKb/json-to-interface" target="_blank"
   >Github Repository</a
 >
+<textarea name="result" id="result" class="result" readonly #result [hidden]="!onResult">
+  <div class="copy">Copy!</div>
+</textarea>
+<button class="btn mb" (click)="copyToClipboard()" [hidden]="!onResult">Copy To Clipboard</button>
